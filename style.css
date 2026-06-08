@@ -80,11 +80,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.1rem, 4.3vw, 4.1rem);
+  font-size: clamp(2.2rem, 3.6vw, 3.55rem);
 }
 
 h1 .hero-title-line {
   display: block;
+  white-space: nowrap;
 }
 
 h2 {
@@ -240,7 +241,7 @@ h3 {
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(52vw, 860px);
+  width: min(56vw, 900px);
   min-height: 540px;
   padding: 92px 56px 88px clamp(52px, 6vw, 108px);
   background: rgba(255, 253, 249, 0.95);
@@ -1049,7 +1050,7 @@ h3 {
 
   h1 {
     max-width: 720px;
-    font-size: clamp(2.05rem, 5.8vw, 3.1rem);
+    font-size: clamp(2.05rem, 5.2vw, 3rem);
     line-height: 1.42;
   }
 
