@@ -232,7 +232,7 @@ h3 {
 
 .hero-photo {
   position: absolute;
-  inset: 0 0 0 43%;
+  inset: 0 0 0 38%;
   min-height: 540px;
   border-radius: 0 0 0 44% / 0 0 0 100%;
 }
@@ -240,9 +240,9 @@ h3 {
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(52%, 680px);
+  width: min(52vw, 860px);
   min-height: 540px;
-  padding: 92px 44px 88px max(44px, calc((100vw - 1120px) / 2));
+  padding: 92px 56px 88px clamp(52px, 6vw, 108px);
   background: rgba(255, 253, 249, 0.95);
   border-radius: 0 0 50% 0 / 0 0 62% 0;
 }
@@ -256,7 +256,7 @@ h3 {
 }
 
 .hero-lead {
-  max-width: 520px;
+  max-width: 620px;
   margin: 26px 0 0;
   color: var(--brown);
   font-family: "Yu Gothic", "Meiryo", sans-serif;
