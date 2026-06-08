@@ -65,7 +65,8 @@ h1,
 h2,
 h3,
 p {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 h1,
@@ -80,6 +81,10 @@ h3 {
 
 h1 {
   font-size: clamp(2.1rem, 4.3vw, 4.1rem);
+}
+
+h1 .hero-title-line {
+  display: block;
 }
 
 h2 {
@@ -1021,23 +1026,35 @@ h3 {
 @media (max-width: 880px) {
   .hero {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     min-height: auto;
   }
 
   .hero-photo {
+    order: 2;
     position: relative;
     inset: auto;
     width: 100%;
-    min-height: 380px;
+    min-height: 320px;
     border-radius: 0 0 40% 0 / 0 0 18% 0;
   }
 
   .hero-content {
+    order: 1;
     width: 100%;
     min-height: auto;
-    padding: 48px 24px 64px;
+    padding: 44px 24px 44px;
     border-radius: 0;
+  }
+
+  h1 {
+    max-width: 720px;
+    font-size: clamp(2.05rem, 5.8vw, 3.1rem);
+    line-height: 1.42;
+  }
+
+  .hero-lead {
+    max-width: 640px;
   }
 
   .worry-panel {
